@@ -11,8 +11,11 @@ function App() {
   };
   return (
     <div className="grid-container">
-      <Header />
-      <SideBar />
+      <Header OpenSidebar={OpenSidebar} />
+      <SideBar
+        openSideBarToggle={openSideBarToggle}
+        OpenSidebar={OpenSidebar}
+      />
       <Home />
     </div>
   );
